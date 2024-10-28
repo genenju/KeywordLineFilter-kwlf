@@ -32,6 +32,6 @@ We can also require that all rules are met before adding to the output with para
 
 ```
 echo "hello world!" |kwlf -a hello github # This line will not be send to output
-echo "**hello world**!" |kwlf -a hello world # This line will be send to output.
+echo "hello world!" |kwlf -a hello world # This line will be send to output.
 ```
 

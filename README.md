@@ -1,6 +1,7 @@
 It is a command line tool to filter (text) lines from shell pipline.
 Usually it can be used with the 'cat' command to search the contents of text files:
-cat xxx.log |kwlf "error" # To find the line containing 'error' in the log file
+
+eg. Use 'cat xxx.log |kwlf error' To find the line containing 'error' in the log file
 
 ### Multiple keyword searches:
 ```

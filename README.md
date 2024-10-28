@@ -13,7 +13,7 @@ If the keyword is a regular expression, we need to add the '-r.' prefix to indic
 ```
 echo "hello, world, welcome to github! Today is 2024-10-01. The weather is sunny." |./kwlf  -r."[0-9]{4}-[0-9]{2}-[0-9]{2}"
 ```
-The output should be: "hello, world, welcome to github! Today is **2024-10-01**. The weather is sunny.". The date part should be highlighted.
+The output should be: "hello, world, welcome to github! Today is **2024-10-01**. The weather is sunny.". The date part will be highlighted.
 
 ### Exclusion Filtering
 By default, a string containing a keyword or matching a regular expression is considered to satisfy one of the rules.

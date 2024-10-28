@@ -6,14 +6,14 @@ cat xxx.log |kwlf "error" # To find the line containing 'error' in the log file
 ```
 echo "hello, world, welcome to github! Today is 2024-10-01. The weather is sunny." |./kwlf "welcome" github
 ```
-The output should be: "hello, world, welcome to github! Today is 2024-10-01. The weather is sunny.", words 'welcome' and 'github' will be highlighted.
+The output should be: "hello, world, **welcome** to **github**! Today is 2024-10-01. The weather is sunny.", words 'welcome' and 'github' will be highlighted.
 
 ### Regular expression matching
 If the keyword is a regular expression, we need to add the '-r.' prefix to indicate it:
 ```
 echo "hello, world, welcome to github! Today is 2024-10-01. The weather is sunny." |./kwlf  -r."[0-9]{4}-[0-9]{2}-[0-9]{2}"
 ```
-The output should be: "hello, world, welcome to github! Today is 2024-10-01. The weather is sunny.". The date part should be highlighted.
+The output should be: "hello, world, welcome to github! Today is **2024-10-01**. The weather is sunny.". The date part should be highlighted.
 
 ### Exclusion Filtering
 By default, a string containing a keyword or matching a regular expression is considered to satisfy one of the rules.
@@ -32,6 +32,6 @@ We can also require that all rules are met before adding to the output with para
 
 ```
 echo "hello world!" |kwlf -a hello github # This line will not be send to output
-echo "hello world!" |kwlf -a hello world # This line will be send to output.
+echo "**hello world**!" |kwlf -a hello world # This line will be send to output.
 ```
 

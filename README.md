@@ -36,3 +36,4 @@ echo "hello world!" |kwlf -a hello github # This line will not be send to output
 echo "hello world!" |kwlf -a hello world # This line will be send to output.
 ```
 
+![image](https://github.com/user-attachments/assets/2a3aa378-675e-4707-a3fe-8b8adc5e84e1)
